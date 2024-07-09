@@ -42,7 +42,6 @@ li{
     align-items: center;
     justify-content: center;
     height: 28dvh;
-
     .nav-list{
       display: flex;
       flex-direction: column;
@@ -56,6 +55,8 @@ li{
         transform: translateX(-17px);
         display: flex;
         justify-content: center;
+        z-index: 15;
+
         .nav-navegator{
           text-decoration: none;
           display: flex;
@@ -63,10 +64,34 @@ li{
           align-items: center;
           width: 120px;
           transition: all 0.5s ease;
+
         }
       }
     }
   }
+  .sombra{
+    position: absolute;
+    width: 90%;
+    right: -30px;
+    opacity: 0;
+    transform: translateY(-10px);
+    height: 60px;
+    background-color: #043A92;
+    border-radius: 15px 0 0 15px;
+    z-index: -1;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .nav-item:nth-child(1).active .sombra{
+    opacity: 1;
+  }
+  .nav-item:nth-child(2).active .sombra{
+    opacity: 1;
+  }
+  .nav-item:nth-child(3).active .sombra{
+    opacity: 1;
+  }
+
   .redes-container{
 
     display: flex;
@@ -139,7 +164,7 @@ li{
 
 #arrow{
   background-color: transparent;
-  width: 60px;
+  width: 50px;
   border: 0;
   transform: rotate(0deg);
   transition: 0.5s;
@@ -164,6 +189,7 @@ li{
       border-radius: 29px;
       padding: 29px 0px 29px 29px;
       margin-top: 80px;
+      transition: opacity 0.6s ease;
       /*transform: translateY(60px);*/
       
       .parrafo-riuk1{
@@ -214,6 +240,7 @@ li{
           display: flex;
           justify-content: space-between;
           transition: transform 0.5s ease;
+          transition: opacity 0.5s ease;
 
           &:hover{
             transform: scale(1.1);
@@ -236,6 +263,7 @@ li{
       text-align: justify;
       padding: 19px 19px 0px 19px;
       font-size: 15px;
+      transition: opacity 0.5s ease;
     }
     .recurso-cuerpo{
       position: relative;
@@ -264,6 +292,7 @@ li{
               display: flex;
               flex-direction: column;
               align-items: center;
+              transition: opacity 0.5s ease;
 
               .programa-imagen-container{
                 position: relative;
@@ -353,6 +382,8 @@ li{
         height: 700px;
         border-radius: 45px;
         padding: 20px 0px 0px 40px;
+        transition: opacity 0.5s ease;
+
         >p {
           font-weight: 700;
           font-size: 17px;
@@ -393,8 +424,50 @@ li{
       .lista-libros{
         width: 800px;
         .libro-item{
-          width: 185px;
+          width: 180px;
           text-align: center;
+
+          .imagen-libro{
+            position: relative;
+            width: 100%;
+            &:nth-child(1):hover .leer-libro{
+              height: 175px;
+
+              >img{
+                opacity: 1;
+              }
+              >p{
+                opacity: 1;
+              }
+            }
+
+            .leer-libro{
+              background-color: #FFFFFF;
+              position: absolute;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              text-decoration: none;
+              width: 100%;
+              height: 0;
+              border-radius: 21px;
+              top: 0;
+              transition: height 0.8s 0.1s ease;
+
+              >img{
+                opacity: 0;
+                transition: 0.5s 0.1s;
+              }
+              >p{
+                color: #CACACA;
+                opacity: 0;
+                font-size: 17px;
+                transition: 0.5s 0.1s;
+                font-weight: 600;
+              }
+            }
+          }
         }
       }
     }

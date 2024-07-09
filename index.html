@@ -20,19 +20,22 @@
       <nav class="nav-container">
         <ul class="nav-list">
           <li class="nav-item w-100">
-            <a href="#sobremi" class="nav-navegator w-30" id="nav">
+            <div class="sombra"></div>
+            <a href="#sobremi" class="w-30 nav-navegator" id="nav">
               <span class="titulo-link">Sobre mi</span>
               <img src="/sobremi.svg" alt="sobre" />
             </a>
           </li>
           <li class="nav-item w-100">
-            <a class="nav-navegator w-30" href="#recursos">
+            <div class="sombra"></div>
+            <a class="w-30 nav-navegator" href="#recursos">
               <span class="titulo-link">Recursos</span>
               <img src="/recursos.svg" alt="recursos" />
             </a>
           </li>
           <li class="nav-item w-100">
-            <a class="nav-navegator w-30" href="#libros">
+            <div class="sombra"></div>
+            <a class="w-30 nav-navegator" href="#libros">
               <span class="titulo-link">Libros</span>
               <img src="/libros.svg" alt="libros">
             </a>
@@ -87,9 +90,9 @@
           <img src="/telegram.svg" alt="" class="imagen-telegram" />
         </a>
       </div>
-      <div class="footer-btn">
+      <div class="footer-btn w-100">
         <div type="button" title="Esconder">
-          <img src="/arrow.svg" alt="" id="arrow" />
+          <img src="/arrow.svg" alt="" id="arrow"/>
         </div>
       </div>
     </header>
@@ -110,7 +113,7 @@
           </p>
           <img src="/riuk1.png" alt="riuk1" class="riuk1" />
         </div>
-        <div class="objetivo-container">
+        <div class="objetivo-container segundo">
           <img src="/riuk2.png" alt="riuk1" class="riuk2" />
           <p class="parrafo-riuk2">
             Como apasionado del branding, diseño de interiores y el arte de la
@@ -242,6 +245,10 @@
           <ul class="lista-libros mt-4">
             <li class="libro-item">
               <div class="imagen-libro">
+                <a href="https://www.wattpad.com/1440639358-el-destino-de-los-elegidos-i-el-legado-de-los" class="leer-libro" target="_blank">
+                  <img src="/leerWattpad.svg" alt="">
+                  <p>Leer por Wattpad</p>
+                </a>
                 <img src="/1erLibro.png" alt="">
               </div>
               <p>El destino de los elegidos</p>
@@ -253,6 +260,7 @@
     </main>
     <script type="module" src="/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="anime.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
