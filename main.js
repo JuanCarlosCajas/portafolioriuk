@@ -133,7 +133,7 @@ $botonArrow.addEventListener("click", () => {
   const $footerBtn = document.querySelector(".footer-btn");
 
   if (estadoAbierto) {
-    $cabecera.style.width = "35%";
+    $cabecera.style.width = "25%";
     $logoContainer.style.height = "20dvh";
     $logoRiuk.setAttribute("src", riukLogo);
     $navTitulos.forEach((item) => (item.style.display = "block"));
@@ -156,7 +156,7 @@ $botonArrow.addEventListener("click", () => {
       width: "65%",
     });
     $(".dividor").css({
-      width: "35%",
+      width: "25%",
     });
   } else {
     $logoContainer.style.height = "17dvh";
