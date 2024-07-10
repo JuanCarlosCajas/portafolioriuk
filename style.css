@@ -24,7 +24,7 @@ li{
 
 .cabecera-port{
   position: fixed;
-  width: 25%;
+  width: 28%;
   height: 100dvh;
   background-color: var(--background-header);
   transition: all 0.5s ease;
@@ -102,9 +102,9 @@ li{
     .redes{
       display: grid;
       place-items: center;
-      gap: 20px;
-      width: 340px;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 15px;
+      width: 360px;
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
 
       .redes-imagen{
         width: 40px;
