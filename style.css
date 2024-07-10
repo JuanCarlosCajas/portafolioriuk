@@ -102,8 +102,8 @@ li{
     .redes{
       display: grid;
       place-items: center;
-      gap: 15px;
-      width: 250px;
+      gap: 25px;
+      width: 260px;
       grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
 
       .redes-imagen{
