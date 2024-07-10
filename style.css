@@ -102,9 +102,9 @@ li{
     .redes{
       display: grid;
       place-items: center;
-      gap: 15px;
-      width: 360px;
-      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      gap: 10px;
+      width: 250px;
+      grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
 
       .redes-imagen{
         width: 40px;
