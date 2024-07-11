@@ -16,6 +16,7 @@
 body{
   display: flex;
   background-color: var(--background-container);
+  overflow-x: hidden;
 }
 
 li{
@@ -29,6 +30,7 @@ li{
   background-color: var(--background-header);
   transition: all 0.5s ease;
   z-index: 100;
+
   .logo-container{
     display: flex;
     justify-content: center;
@@ -41,7 +43,7 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 28dvh;
+    height: 33dvh;
     .nav-list{
       display: flex;
       flex-direction: column;
@@ -72,9 +74,10 @@ li{
   .sombra{
     position: absolute;
     width: 90%;
+    top: 0;
     right: -30px;
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(-17px);
     height: 60px;
     background-color: #043A92;
     border-radius: 15px 0 0 15px;
@@ -106,11 +109,26 @@ li{
       width: 260px;
       grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
 
-      .redes-imagen{
-        width: 40px;
-        background-color: white;
-        padding: 10px;
+      .nav-link{
+        border: 2px solid black;
         border-radius: 999999999999px;
+        background-color: white;
+        padding: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+
+        &:hover{
+          background-color: #005CE2;
+          
+        }
+
+        .redes-imagen{
+          width: 80%;
+          height: 20px;
+          fill: white;
+        }
       }
     }
   }
@@ -140,6 +158,7 @@ li{
   height: 40px;
   transition: all 0.5s;
   margin-left: 14px;
+  z-index: 15;
 
   &:hover{
     background-color: #005CE2;
@@ -160,6 +179,7 @@ li{
 .imagen-telegram{
   width: 40px;
   transform: translateY(5px);
+  z-index: 10;
 }
 
 #arrow{
@@ -390,8 +410,8 @@ li{
         }
         .riuk-pensando{
           position: absolute;
-          left: -170px;
-          bottom: -25px;
+          left: -140px;
+          bottom: 0px;
         }
       }
     }
@@ -481,6 +501,23 @@ li{
   }
 }
 
+@media (1500px < width < 1800px){
+
+  .logo-container{
+    height: 14dvh;
+  }
+
+  .link-imagen{
+    width: 4dvh;
+  }
+}
+
+@media (900px < width < 1500px){
+  .link-imagen{
+    width: 30px;
+  }
+}
+
 @media (100px < width < 900px) {
   .cabecera-port{
     width: 70%;
@@ -518,6 +555,7 @@ li{
         
         grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
         .nav-link{
+
           .redes-imagen{
             width: 30px;
             padding: 8px;

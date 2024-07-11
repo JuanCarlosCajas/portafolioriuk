@@ -2,6 +2,22 @@ import "./style.css";
 import anime from "animejs/lib/anime.es.js";
 import riukFocus from "./public/riukFocus.svg";
 import riukLogo from "./public/riuklogo.svg";
+
+import youtube from './public/youtube.svg'
+import youtubeHover from './public/youtubeHover.svg'
+
+import wattpad from './public/wattpad.svg'
+import wattpadHover from './public/wattpadHover.svg'
+
+import tiktok from './public/tiktok.svg'
+import tiktokHover from './public/tiktokHover.svg'
+
+import twitch from './public/twitch.svg'
+import twitchHover from './public/twitchHover.svg'
+
+import instagram from './public/instagram.svg'
+import instagramHover from './public/instagramHover.svg'
+
 const $botonArrow = document.getElementById("arrow");
 let leidoSobremi = false;
 let leidoSocios = false;
@@ -27,12 +43,11 @@ $(document).ready(function () {
       $(window).scrollTop() < $(".recursos-container").offset().top + 580 &&
       $(window).scrollTop() > $(".segundo").offset().top
     ) {
-      if(!leidoRiukPensando) {
+      if (!leidoRiukPensando) {
         $(".cursos-container").css("opacity", "1");
         leidoRiukPensando = true;
       }
-    }
-    else{
+    } else {
       $(".cursos-container").css("opacity", "0");
       leidoRiukPensando = false;
     }
@@ -159,7 +174,7 @@ $botonArrow.addEventListener("click", () => {
       width: "25%",
     });
   } else {
-    $logoContainer.style.height = "17dvh";
+    $logoContainer.style.height = "13dvh";
     $logoRiuk.setAttribute("src", riukFocus);
     $navTitulos.forEach((item) => (item.style.display = "none"));
     $navItems.forEach((item) => (item.style.width = "100%"));
@@ -173,13 +188,23 @@ $botonArrow.addEventListener("click", () => {
     $telegramBoton.style.width = "100%";
     $telegramBoton.style.backgroundColor = "#012F7A";
     $footerBtn.style.justifyContent = "center";
+    $(".link-imagen").css({
+      width: "25%" /*25px*/,
+    });
+    $("#arrow").css("width", "30px");
+    $(".redes-imagen").css({
+      /*
+      width: "25px", /*25px*/
+      /*padding: "5px" /*5px*/
+    });
     $(".telegram").css({
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
+      transform: "translateX(-3px)",
     });
     $(".imagen-telegram").css({
-      width: "55px",
+      width: "35px",
     });
     $(".main-container").css({
       width: "90%",
@@ -189,4 +214,47 @@ $botonArrow.addEventListener("click", () => {
     });
   }
   estadoAbierto = !estadoAbierto;
+});
+
+$(document).ready(function () {
+  $("#instagram").hover(function () {
+      // over
+      $("#instagram-imagen").attr("src", instagramHover);
+    }, function () {
+      // out
+      $("#instagram-imagen").attr("src", instagram);
+    }
+  );
+  $("#tiktok").hover(function () {
+      // over
+      $("#tiktok-imagen").attr("src", tiktokHover);
+    }, function () {
+      // out
+      $("#tiktok-imagen").attr("src", tiktok);
+    }
+  );
+  $("#youtube").hover(function () {
+      // over
+      $("#youtube-imagen").attr("src", youtubeHover);
+    }, function () {
+      // out
+      $("#youtube-imagen").attr("src", youtube);
+    }
+  );
+  $("#twitch").hover(function () {
+      // over
+      $("#twitch-imagen").attr("src", twitchHover);
+    }, function () {
+      // out
+      $("#twitch-imagen").attr("src", twitch);
+    }
+  );
+  $("#wattpad").hover(function () {
+      // over
+      $("#wattpad-imagen").attr("src", wattpadHover);
+    }, function () {
+      // out
+      $("#wattpad-imagen").attr("src", wattpad);
+    }
+  );
 });
