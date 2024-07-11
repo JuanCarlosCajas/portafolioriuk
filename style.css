@@ -113,7 +113,8 @@ li{
         border: 2px solid black;
         border-radius: 999999999999px;
         background-color: white;
-        padding: 3%;
+        width: 39px;
+        height: 39px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -125,7 +126,7 @@ li{
         }
 
         .redes-imagen{
-          width: 80%;
+          width: 90%;
           height: 20px;
           fill: white;
         }

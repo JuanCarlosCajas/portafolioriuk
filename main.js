@@ -181,7 +181,7 @@ $botonArrow.addEventListener("click", () => {
     $navNavegator.forEach((item) => (item.style.justifyContent = "center"));
     $navNavegator.forEach((item) => (item.style.width = "100%"));
     $tituloTelegram.style.display = "none";
-    $cabecera.style.width = "10%"; /*15% mobile*/
+    $cabecera.style.width = "120px"; /*15% mobile*/
     $redesContainer.style.height = "35dvh";
     $botonArrow.style.transform = "rotate(180deg)";
     $tituloBoton.style.display = "none";
@@ -210,7 +210,7 @@ $botonArrow.addEventListener("click", () => {
       width: "90%",
     });
     $(".dividor").css({
-      width: "10%",
+      width: "100px",
     });
   }
   estadoAbierto = !estadoAbierto;
