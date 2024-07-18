@@ -174,7 +174,7 @@ $botonArrow.addEventListener("click", () => {
       width: "40px",
     });
     $(".main-container").css({
-      width: "65%",
+      width: "75%",
     });
     $(".dividor").css({
       width: "25%",
@@ -213,7 +213,7 @@ $botonArrow.addEventListener("click", () => {
       width: "35px",
     });
     $(".main-container").css({
-      width: "90%",
+      width: "100%",
     });
     $(".dividor").css({
       width: "100px",
