@@ -177,7 +177,7 @@ a{
 
 .dividor{
   height: 100dvh;
-  width: 35%;
+  width: 28%;
 }
 
 .imagen-telegram{
@@ -273,7 +273,7 @@ a{
     }
   }
   .recursos-container{
-    width: 100%;  
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
