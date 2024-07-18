@@ -18,6 +18,9 @@ import twitchHover from './public/twitchHover.svg'
 import instagram from './public/instagram.svg'
 import instagramHover from './public/instagramHover.svg'
 
+import kick from './public/kick.svg'
+import kickHover from './public/kickHover.svg'
+
 const $botonArrow = document.getElementById("arrow");
 let leidoSobremi = false;
 let leidoSocios = false;
@@ -164,6 +167,9 @@ $botonArrow.addEventListener("click", () => {
     $telegramBoton.style.width = "180px";
     $telegramBoton.style.backgroundColor = "#003D96";
     $footerBtn.style.justifyContent = "flex-end";
+    $(".link-imagen").css({
+      width: "30%" /*25px*/,
+    });
     $(".imagen-telegram").css({
       width: "40px",
     });
@@ -189,7 +195,7 @@ $botonArrow.addEventListener("click", () => {
     $telegramBoton.style.backgroundColor = "#012F7A";
     $footerBtn.style.justifyContent = "center";
     $(".link-imagen").css({
-      width: "25%" /*25px*/,
+      width: "40%" /*25px*/,
     });
     $("#arrow").css("width", "30px");
     $(".redes-imagen").css({
@@ -255,6 +261,15 @@ $(document).ready(function () {
     }, function () {
       // out
       $("#wattpad-imagen").attr("src", wattpad);
+    }
+  );
+
+  $("#kick").hover(function () {
+      // over
+      $("#kick-imagen").attr("src", kickHover)
+    }, function () {
+      // out
+      $("#kick-imagen").attr("src", kick)
     }
   );
 });

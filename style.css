@@ -23,6 +23,10 @@ li{
   list-style-type: none;
 }
 
+a{
+  text-decoration: none;
+}
+
 .cabecera-port{
   position: fixed;
   width: 28%;
@@ -110,7 +114,6 @@ li{
       grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
 
       .nav-link{
-        border: 2px solid black;
         border-radius: 999999999999px;
         background-color: white;
         width: 39px;
@@ -259,12 +262,11 @@ li{
         .socio-item{
           width: 160px;
           display: flex;
-          justify-content: space-between;
-          transition: transform 0.5s ease;
-          transition: opacity 0.5s ease;
+          justify-content: center;
+          transition: all 0.5s ease;
 
           &:hover{
-            transform: scale(1.1);
+            scale: 1.2;
           }
         }
       }
