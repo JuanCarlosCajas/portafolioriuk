@@ -115,23 +115,6 @@ $(document).ready(function () {
   });
 });
 
-window.addEventListener("DOMContentLoaded", function () {
-  const list = document.querySelectorAll(".nav-item");
-
-  function activarLink() {
-    list.forEach((item) => {
-      item.classList.remove("active");
-    });
-  }
-
-  list.forEach((item) => {
-    item.addEventListener("click", () => {
-      activarLink();
-      item.classList.add("active");
-    });
-  });
-});
-
 let estadoAbierto = false;
 
 $botonArrow.addEventListener("click", () => {
